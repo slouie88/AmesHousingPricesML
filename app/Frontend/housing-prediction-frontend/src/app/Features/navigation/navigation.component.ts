@@ -14,4 +14,8 @@ export class NavigationComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  toggleNavBarDropDown() {
+    this.navbarCollapsed = !this.navbarCollapsed;
+  }
+
 }
