@@ -7,13 +7,15 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavigationComponent } from './Features/navigation/navigation.component';
 import { DataFormComponent } from './Features/prediction/data-form/data-form.component';
 import { HomeComponent } from './Features/home/home.component';
+import { AboutComponent } from './Features/about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     DataFormComponent,
-    HomeComponent
+    HomeComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

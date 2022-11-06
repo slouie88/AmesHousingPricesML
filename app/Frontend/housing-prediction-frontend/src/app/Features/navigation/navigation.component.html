@@ -1,6 +1,6 @@
 <header>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Property Price Calculator</a>
+    <a class="navbar-brand" routerLink="/">Property Price Calculator</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
     (click)="toggleNavBarDropDown()">
       <span class="navbar-toggler-icon"></span>
@@ -8,13 +8,13 @@
     <div class="collapse navbar-collapse" id="navbarNav" [ngbCollapse]="navbarCollapsed">
       <ul class="navbar-nav ms-5">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" routerLink="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" routerLink="/about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Calculate Price</a>
+          <a class="nav-link" routerLink="/dataform">Calculate Price</a>
         </li>
       </ul>
     </div>

@@ -25,4 +25,12 @@ describe('AppComponent', () => {
     const app = fixture.componentInstance;
     expect(app.title).toEqual('housing-prediction-frontend');
   });
+
+  it('should have <routing-outlet> element', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    const appComponentElement: HTMLElement = fixture.nativeElement;
+    const routerOutletElement = appComponentElement.querySelector('router-outlet');
+    expect(routerOutletElement).toBeTruthy();
+  });
 });
