@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavigationComponent } from './Features/navigation/navigation.component';
 import { DataFormComponent } from './Features/prediction/data-form/data-form.component';
+import { HomeComponent } from './Features/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
-    DataFormComponent
+    DataFormComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
