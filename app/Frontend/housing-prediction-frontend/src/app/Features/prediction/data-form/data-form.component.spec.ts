@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { DataFormComponent } from './data-form.component';
 
 describe('DataFormComponent', () => {
@@ -15,6 +14,10 @@ describe('DataFormComponent', () => {
     fixture = TestBed.createComponent(DataFormComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
+  });
+
+  it ('#getForm() should return #dataForm', () => {
+    expect(component.getForm()).toEqual(component.dataForm);
   });
 
   it('should create', () => {
